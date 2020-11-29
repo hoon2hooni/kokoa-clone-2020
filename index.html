@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Kokoa Talk</title>
+    <title>Welcome To Kokoa Talk</title>
 </head>
 <body>
     <div class="status-bar">
-        <div class ="status-bar__column"></div>
+        <div class ="status-bar__column">
         <!-- class 이름을 column 으로 하면 너무 generic하고 어떤 column 이라명시하기 어려움 -->
         <!-- 그래서 긴이름으로 함 -->
             <span>No Service</span>
-            <i class="fas fa-wifi"></i>
+            <i class="fas fa-wifi fa"></i>
             <!-- To do : Wifi  Icon -->
-
-        <div class ="status-bar__column"></div>
-            <span>18:43</span>
-        <div class ="status-bar__column"></div>
-            <span>110%</span>
-            <i class="fas fa-battery-three-quarters"></i>
-            <i class="fas fa-bolt"></i>
-            <!-- batter  Icon -->
-            <!-- lightening icon  -->
+        </div>
+         <div class ="status-bar__column">
+             <span>18:43</span>
+        </div>    
+         <div class ="status-bar__column">
+             <span>110%</span>
+             <i class="fas fa-battery-three-quarters fa"></i>
+             <i class="fas fa-bolt"></i>
+             <!-- batter  Icon -->
+             <!-- lightening icon  -->
+        </div>
     </div>
+
+    <header class ="welcome-header">
+        <h1 class = "welcome-header__title"> Welcome To KoKoa Clone</h1>
+        <p class = "welcome-header__text">
+            If you have a KooKoa Account, log in with your email or phone number.
+        </p>
+    </header>
+
+    <form id ="login-form">
+        <input type="text" placeholder ="Email or phone number"/>
+        <input type="password" placeholder ="Password"/>
+        <input type="submit" value="Log in" />
+        <a href="#">Find Kokoa Account or Password</a>
+    </form>
+    <!-- form 의경우 전체 에 이거 한개만 나올수있기에 class지정 안함 -->
     <script 
         src="https://kit.fontawesome.com/9c4f51facc.js" 
         crossorigin="anonymous">
