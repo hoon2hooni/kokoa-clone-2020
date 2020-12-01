@@ -1,0 +1,37 @@
+.nav{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    background-color: #f9f9fa;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    /* 이거는 벗어난 elipse 다시 돌아오게 해줌 */
+    /* 왜냐하면 우리는 패딩을 가로로20양쪽으로 줌 그러면 실제로 늘어남
+    우리 실제 contents 가 줄어도 괜찮아 근데 딱 맞게 해줘'
+    의 뜻임 box-sizing */
+    border-top:1px solid rgba(131, 110, 110, 0.3);
+}
+.nav__link{
+    position: relative;
+    color:inherit;
+}
+
+
+.nav__list {
+    
+    display:flex;
+    justify-content: space-between;
+}
+.nav__notification{
+    background:tomato;
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content:center;
+    color:white;
+    font-weight:600;
+    position: absolute;
+    left:15px;
+
+}
