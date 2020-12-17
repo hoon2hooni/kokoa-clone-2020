@@ -24,14 +24,26 @@
 }
 .nav__notification{
     background:tomato;
-    width:30px;
-    height:30px;
-    border-radius: 15px;
+    width:25px;
+    height:25px;
+    border-radius: 12.5px;
     display: flex;
     justify-content:center;
+    align-items: center;
     color:white;
     font-weight:600;
     position: absolute;
     left:15px;
-
+    bottom: 15px;
+}
+.nav__others{
+    background:tomato;
+    width:5px;
+    height:5px;
+    border-radius: 2.5px;
+    display: flex;
+    justify-content:right; 
+    position: absolute;
+    left:37px;
+    bottom: 30px;
 }
